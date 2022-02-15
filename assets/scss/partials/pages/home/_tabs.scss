@@ -1,0 +1,154 @@
+#tabs{
+    padding: $base-size*20 0;
+}
+
+.tab_header{
+    text-align: center;
+    height: $base-size*11;
+
+    a:hover{
+        text-decoration: none;
+    }
+
+    a.active{
+        background: $primary-color;
+        color: #fff;
+        
+    }
+
+    a{
+        border-radius: 5px 5px 0 0;
+        font-size: $base-size*5;
+        font-weight: $base-size*120;
+        padding: $base-size*5 ;
+        line-height: $base-size;
+        display: inline-block;
+        color: black;
+    }
+}
+
+
+
+.today_list{
+    
+    .filter_blocks{
+        margin-bottom: $base-size*10;
+        padding: 20px 0;
+        background: $primary-color;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        .filter_block{
+            display: inline-block;
+            margin-right: $base-size*10;
+
+            .selected{
+                background: #fff url("https://cinemaplus.az/site/templates/images/select_icon.svg") no-repeat 100% 50%;
+                appearance: none;
+                font-size: $font-size -4;
+                font-weight: 500;
+                line-height: $font-size -1;
+                padding: 0 15px 0 20px;
+                
+                margin-right: 1px;
+                border-radius: 20px;
+                height: $base-size*10;
+            }
+        }
+    }
+}
+
+.movie-items{
+    .movie-name{
+
+        h2{
+            margin-bottom: 0 !important;
+            a{
+                font-size: $font-size;
+                color: #000000;
+                padding: $base-size*5 0;
+                display: block;
+                text-align: center;
+                transition: 0.3s;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+        }
+        
+    }
+
+    .movie-poster{
+        a{
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.movie-items:hover{
+
+    .movie-name{
+        background-color: $primary-color;
+        
+        transition: 0.5s;
+    }
+    h2{
+        a{
+            color: #fff;
+        }
+    }
+}
+
+.poster-icons{
+    display: flex;
+    justify-content: center;
+    .poster-icon{
+        
+        img{
+            width: 55px;
+            height: 50px;
+        }
+    }
+}
+
+.go-sessio{
+    background-color: $quaternary-color;
+    padding: $base-size *5;
+
+    display: flex;
+    justify-content: flex-end;
+
+    a{
+        background-color: $primary-color;
+        
+        font-family: 'Gotham-Medium';
+        font-size: $base-size*4;
+        color: #FFFFFF;
+        line-height: 19px;
+        background-color: $primary-color;
+        padding: 10px 16px;
+        border-radius: 50px;
+        transition: 0.4s;
+        text-transform: uppercase;
+        margin-right: 4px;
+    }
+
+    a:hover{
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: $secondary-color;
+    }
+
+
+    .age-limit{
+        border-radius: 50%;
+        background-color: $thirdly-color;
+        padding: $base-size*2 ;
+        color: #fff;
+
+    }
+}

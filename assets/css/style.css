@@ -36,4 +36,159 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    height: 40vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+#tabs {
+  padding: 80px 0;
+}
+
+.tab_header {
+  text-align: center;
+  height: 44px;
+}
+
+.tab_header a:hover {
+  text-decoration: none;
+}
+
+.tab_header a.active {
+  background: #334E9E;
+  color: #fff;
+}
+
+.tab_header a {
+  border-radius: 5px 5px 0 0;
+  font-size: 20px;
+  font-weight: 480px;
+  padding: 20px;
+  line-height: 4px;
+  display: inline-block;
+  color: black;
+}
+
+.today_list .filter_blocks {
+  margin-bottom: 40px;
+  padding: 20px 0;
+  background: #334E9E;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.today_list .filter_blocks .filter_block {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.today_list .filter_blocks .filter_block .selected {
+  background: #fff url("https://cinemaplus.az/site/templates/images/select_icon.svg") no-repeat 100% 50%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 20px -4;
+  font-weight: 500;
+  line-height: 20px -1;
+  padding: 0 15px 0 20px;
+  margin-right: 1px;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.movie-items .movie-name h2 {
+  margin-bottom: 0 !important;
+}
+
+.movie-items .movie-name h2 a {
+  font-size: 20px;
+  color: #000000;
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.movie-items .movie-name h2 a:hover {
+  text-decoration: none;
+}
+
+.movie-items .movie-poster a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.movie-items:hover .movie-name {
+  background-color: #334E9E;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.movie-items:hover h2 a {
+  color: #fff;
+}
+
+.poster-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.poster-icons .poster-icon img {
+  width: 55px;
+  height: 50px;
+}
+
+.go-sessio {
+  background-color: #F3F3F3;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.go-sessio a {
+  background-color: #334E9E;
+  font-family: 'Gotham-Medium';
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 19px;
+  background-color: #334E9E;
+  padding: 10px 16px;
+  border-radius: 50px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  text-transform: uppercase;
+  margin-right: 4px;
+}
+
+.go-sessio a:hover {
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: rgba(0, 172, 236, 0.8);
+}
+
+.go-sessio .age-limit {
+  border-radius: 50%;
+  background-color: #D0021B;
+  padding: 8px;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
