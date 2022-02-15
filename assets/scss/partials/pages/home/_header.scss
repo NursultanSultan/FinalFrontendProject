@@ -1,7 +1,8 @@
 #header{
     width: 100%;
-    background-color: $primary-color;
-
+    background:transparent;
+    position: fixed;
+    z-index: 99; 
 }
 
 .navbar-brand{
