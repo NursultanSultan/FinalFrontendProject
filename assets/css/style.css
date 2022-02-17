@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Satisfy&family=Shizuru&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +22,7 @@
 .nav-link {
   margin-right: 12px;
   color: #fff !important;
-  font-size: 20px;
+  font-size: 20px -4;
   font-weight: 600px;
 }
 
@@ -59,7 +60,7 @@
 }
 
 .tab_header a.active {
-  background: #334E9E;
+  background: #17223B;
   color: #fff;
 }
 
@@ -73,10 +74,20 @@
   color: black;
 }
 
-.today_list .filter_blocks {
+.tab_display {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .filter_block {
+    display: none;
+  }
+}
+
+.filter_blocks {
   margin-bottom: 40px;
   padding: 20px 0;
-  background: #334E9E;
+  background: #17223B;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,22 +97,18 @@
   text-align: center;
 }
 
-.today_list .filter_blocks .filter_block {
+.filter_blocks .filter_block {
   display: inline-block;
   margin-right: 40px;
 }
 
-.today_list .filter_blocks .filter_block .selected {
-  background: #fff url("https://cinemaplus.az/site/templates/images/select_icon.svg") no-repeat 100% 50%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+.filter_blocks .filter_block .selected {
   font-size: 20px -4;
   font-weight: 500;
   line-height: 20px -1;
   padding: 0 15px 0 20px;
   margin-right: 1px;
-  border-radius: 20px;
+  border-radius: 8px;
   height: 40px;
 }
 
@@ -190,5 +197,239 @@
   background-color: #D0021B;
   padding: 8px;
   color: #fff;
+}
+
+.movie-card {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  position: relative;
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: none;
+}
+
+.movie-card .card-side {
+  border-radius: 15px;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 2rem;
+  color: #fff;
+}
+
+.movie-card .card-side.back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+  background-color: #334E9E;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.movie-card .card-side.front {
+  background-color: #0093E9;
+  background-image: linear-gradient(43deg, #0093E9 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.movie-card:hover .card-side.front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.movie-card:hover .card-side.back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.scene {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+.scene .card {
+  position: relative;
+  width: 240px;
+  height: 300px;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.scene .card:hover {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+}
+
+.scene .card .card__face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+}
+
+.scene .card .card__face img {
+  width: 240px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.scene .card .card__face--back {
+  -webkit-transform: rotateY(0.5turn);
+          transform: rotateY(0.5turn);
+}
+
+#parallax {
+  padding: 80px 0;
+}
+
+.parallax_image {
+  background-image: url(../../../../../assets/image/The-Best-Movies-Trilogies-Of-All-Time.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.parallax_image::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background: black;
+  opacity: 0.5;
+}
+
+.parallax_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+}
+
+.parallax_content h2 {
+  font-size: 60px !important;
+  font-weight: 700px;
+  font-family: 'Fredericka the Great', cursive;
+  text-transform: uppercase;
+}
+
+.parallax_content p {
+  font-size: 30px;
+  font-weight: 600px;
+  font-family: 'Fredericka the Great', cursive;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .parallax_content h2 {
+    font-size: 40px !important;
+  }
+  .parallax_content p {
+    font-size: 20px;
+  }
+}
+
+#platinum {
+  background-image: url(../../../../../assets/image/platinumbgnew-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#platinum .platinum_title {
+  text-align: center;
+  padding: 30px 0;
+}
+
+#platinum .platinum_title h3 {
+  color: #fff;
+}
+
+#platinum .platinum_title p {
+  color: #fff;
+}
+
+#platinum .boxes {
+  text-align: center;
+}
+
+#platinum .boxes .icon {
+  margin-top: 20px;
+}
+
+#platinum .boxes .icon i {
+  font-size: 40px;
+  color: #61ccee;
+}
+
+#platinum .boxes .title strong {
+  font-size: 20px;
+  color: #61ccee;
+}
+
+#platinum .boxes .description p {
+  color: #fff !important;
+  font-size: 20px;
+}
+
+#platinum::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(23, 31, 38, 0.7);
 }
 /*# sourceMappingURL=style.css.map */

@@ -19,16 +19,19 @@
     
     <!-- Header start -->
     <header id="header">
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">Cinema</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                  <ul class="navbar-nav">
                     <li class="nav-item active">
                       <a class="nav-link" href="#">Bas Sehife</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./platinium.html">Platinum</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Aksiyalar</a>
@@ -40,7 +43,12 @@
                       <a class="nav-link " href="#">Haqqimizda</a>
                     </li>
                   </ul>
+                  
+                    
+                 
                 </div>
+
+                
               </nav>
         </div>
     </header>
@@ -92,12 +100,12 @@
 
     <section id="tabs">
         <div class="tab_header">
-            <a href="#" class="active" id="today_list" rel="today">BU GÜN</a>
-            <a href="#" id="schedule_list" rel="schedule">CƏDVƏL</a>
+            <a href="#today_list" class="active btn" id="today_list" rel="today">BU GÜN</a>
+            <a href="#schedule_list" class="btn" id="schedule_list" rel="schedule">CƏDVƏL</a>
         </div>
 
         <div class="tab_body">
-            <div class="today_list">
+            <div class="today_list tab_list">
                 <div class="filter_blocks mobile_hide">
                     <div class="filter_block">
                         <select class="selected" name="home_cinema_sorter" id="home_cinema_sorter">
@@ -126,19 +134,19 @@
                         </select>
                     </div>
                 </div>
-                <!-- <div class="container">
+                <div class="container">
                     <div class="row">
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="movie-items">
                                 <div class="movie-name">
                                     <h2>
-                                        <a href="#"> 
+                                        <a href="./movie.html"> 
                                             Dayi : Bir adamin hikayesi
                                         </a>
                                     </h2>
                                 </div>
                                 <div class="movie-poster">
-                                    <a href="#">
+                                    <a href="./movie.html">
                                         <img src="./assets/image/700x1000_1.350x0.jpg" alt="">
                                     </a>
                                 </div>
@@ -160,14 +168,219 @@
                                 
                             </div>
                         </div>
+
+                        <!-- <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="movie-card">
+                                <div class="card-side front">
+                                    <img style="width: 100%;" src="./assets/image/16837.350x0.jpg" alt="">
+                                </div>
+                                <div class="card-side back">
+
+                                </div>
+                            </div>
+                        </div> -->
+
+                        <!-- <div class="col-lg-3">
+                            <div class="scene">
+                                <div class="card">
+                                  <div class="card__face card__face--front">
+                                    <img style="width: 100%;" src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" />
+                                  </div>
+                                  <div class="card__face card__face--back">
+                                    <img style="width: 100%;" src="https://i.loli.net/2019/11/16/cqyJiYlRwnTeHmj.jpg" />
+                                  </div>
+                                 </div>
+                            </div>
+                        </div> -->
+
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="movie-items">
+                                <div class="movie-name">
+                                    <h2>
+                                        <a href="#"> 
+                                            Dayi : Bir adamin hikayesi
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div class="movie-poster">
+                                    <a href="#">
+                                        <img src="./assets/image/17221.350x0.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="poster-icons">
+                                    <span class="poster-icon">
+                                        <img src="./assets/image/ni_twod.png" alt="">
+                                    </span>
+                                    <span class="poster-icon">
+                                        <img src="./assets/image/ni_tur.png" alt="">
+                                    </span>
+                                </div>
+
+                                <div class="go-sessio">
+                                    <a href="#"> SEANSLAR</a>
+                                    <span class="age-limit">
+                                        16+
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="movie-items">
+                                <div class="movie-name">
+                                    <h2>
+                                        <a href="#"> 
+                                            Dayi : Bir adamin hikayesi
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div class="movie-poster">
+                                    <a href="#">
+                                        <img src="./assets/image/ancharted.350x0.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="poster-icons">
+                                    <span class="poster-icon">
+                                        <img src="./assets/image/ni_twod.png" alt="">
+                                    </span>
+                                    <span class="poster-icon">
+                                        <img src="./assets/image/ni_tur.png" alt="">
+                                    </span>
+                                </div>
+
+                                <div class="go-sessio">
+                                    <a href="#"> SEANSLAR</a>
+                                    <span class="age-limit">
+                                        16+
+                                    </span>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        
+
                     </div>
-                </div> -->
+                </div>
             </div>
-            <div class="schedule_list"></div>
-            <div class="soon_list"></div>
+            <div class="schedule_list tab_list tab_display">
+                <div class="filter_blocks">
+
+                    
+                    <div class="filter_block">
+                        <div class="form-group">
+                            <select class="form-control selected" id="exampleFormControlSelect1">
+                              <option>03.03.2022</option>
+                              <option>04.03.2022</option>
+                              <option>05.03.2022</option>
+                              <option>06.03.2022</option>
+                              <option>07.03.2022</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="filter_block">
+                        <select class="form-control selected" id="exampleFormControlSelect1">
+                            <option >Kinoteatrlar</option>
+	                        <option >Kinoteatrlar</option>
+						    <option >28 Mall</option>
+                            <option>Ganjlik Mall</option>
+                            <option>Deniz Mall</option>
+                            <option>Azerbaijan Cinema</option>
+                            <option>Amburan Mall</option>
+                            <option >Sumqayıt</option>
+                            <option>Khamsa Park (Ganja)</option>
+                            <option >Ganja Mall (Ganja)</option>
+                            <option>Şamaxı</option>
+                        </select>
+                    </div>
+                   
+                    <div class="filter_block">
+                        <select class="form-control selected" id="exampleFormControlSelect1">
+                            <option >Filmin dili</option>
+                            <option>Bütün dillərdə</option>
+                            <option >Azərbaycanca</option>
+                            <option >Ha pyccкoм</option>
+                            <option>In English</option>
+                            <option>Türkçe</option>			                        
+                        </select>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <table class="table table-hover table-dark">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Film</th>
+                                    <th scope="col">Seans</th>
+                                    <th scope="col">Kinoteatr</th>
+                                    <th scope="col">Zal</th>
+                                    <th scope="col">Format</th>
+                                    <th scope="col">Qiymet</th>
+                                    <th scope="col">Almaq</th>
+
+
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th>SpiderMan</th>
+                                    <td>17 : 00</td>
+                                    <td>Ganjlik Mall</td>
+                                    <td>Zal1</td>
+                                    <td>
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_tur.png" alt="">
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_twod.png" alt="">
+                                    </td>
+                                    <td>8.00 AZN</td>
+                                    <td>@mdo</td>
+
+                                  </tr>
+                                  <tr>
+                                    <th>SpiderMan</th>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="soon_list tab_list tab_display"></div>
         </div>
     </section>
     <!-- Tabs end -->
+
+
+    <!-- Parallax start -->
+
+    <section id="parallax">
+        <div class="parallax_image">
+            <!-- <img  src="./assets/image/The-Best-Movies-Trilogies-Of-All-Time.jpg" alt=""> -->
+
+            <div class="container h-100">
+                <div class="parallax_content h-100">
+                    <h2>Cinema De Reverie</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, dicta!
+                    </p>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    <!-- Parallax end -->
+
+    
 
     <!-- Main end -->
 
@@ -188,6 +401,10 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <!-- Bootstrap script end -->
+
+    <!-- JQuery -->
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- JQuery end -->
 
 
     <!-- Javascript -->

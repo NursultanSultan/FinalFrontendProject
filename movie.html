@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- Css end  -->
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Bootstrap link end-->
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Header start -->
+    <header id="header" style="position: static;background-color: #17223B;">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Cinema</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Bas Sehife</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Aksiyalar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tarifler</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">Haqqimizda</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main start -->
+
+    <main>  
+
+        <!-- trailer start -->
+        <section id="trailer">
+            <div class="trailer_player">
+                <iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/goQ2JKulBnQ" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            </div>
+        </section>
+        <!-- trailer end -->
+
+        <!-- tab start -->
+        <section id="tabs">
+            <div class="tab_header">
+                <a href="#Session" class="active btn" id="session" rel="session">Seanslar</a>
+                <a href="#About" class="btn" id="about" rel="about">Haqqinda</a>
+            </div>
+
+            <div class="tab_body">
+                
+                <div class="session_list tab_list">
+                    <div class="filter_blocks">
+    
+                        
+                        <div class="filter_block">
+                            <div class="form-group">
+                                <select class="form-control selected" id="exampleFormControlSelect1">
+                                  <option>03.03.2022</option>
+                                  <option>04.03.2022</option>
+                                  <option>05.03.2022</option>
+                                  <option>06.03.2022</option>
+                                  <option>07.03.2022</option>
+                                </select>
+                            </div>
+                        </div>
+    
+                        <div class="filter_block">
+                            <select class="form-control selected" id="exampleFormControlSelect1">
+                                <option >Kinoteatrlar</option>
+                                <option >Kinoteatrlar</option>
+                                <option >28 Mall</option>
+                                <option>Ganjlik Mall</option>
+                                <option>Deniz Mall</option>
+                                <option>Azerbaijan Cinema</option>
+                                <option>Amburan Mall</option>
+                                <option >Sumqayıt</option>
+                                <option>Khamsa Park (Ganja)</option>
+                                <option >Ganja Mall (Ganja)</option>
+                                <option>Şamaxı</option>
+                            </select>
+                        </div>
+                       
+                        <div class="filter_block">
+                            <select class="form-control selected" id="exampleFormControlSelect1">
+                                <option >Filmin dili</option>
+                                <option>Bütün dillərdə</option>
+                                <option >Azərbaycanca</option>
+                                <option >Ha pyccкoм</option>
+                                <option>In English</option>
+                                <option>Türkçe</option>			                        
+                            </select>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <table class="table table-hover table-dark">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Film</th>
+                                        <th scope="col">Seans</th>
+                                        <th scope="col">Kinoteatr</th>
+                                        <th scope="col">Zal</th>
+                                        <th scope="col">Format</th>
+                                        <th scope="col">Qiymet</th>
+                                        <th scope="col">Almaq</th>
+    
+    
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th>SpiderMan</th>
+                                        <td>17 : 00</td>
+                                        <td>Ganjlik Mall</td>
+                                        <td>Zal1</td>
+                                        <td>
+                                            <img style="width:55px;height: 50px;" src="./assets/image/ni_tur.png" alt="">
+                                            <img style="width:55px;height: 50px;" src="./assets/image/ni_twod.png" alt="">
+                                        </td>
+                                        <td>8.00 AZN</td>
+                                        <td>@mdo</td>
+    
+                                      </tr>
+                                      <tr>
+                                        <th>SpiderMan</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                      </tr>
+                                      
+                                    </tbody>
+                                  </table>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                
+            </div>
+        </section>
+        <!-- tab end -->
+
+
+    </main>
+
+    <!-- Main end -->
+
+
+
+    <!-- footer start -->
+    <footer id="footer">
+
+    </footer>
+    <!-- footer end -->
+
+
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/3359ce2be7.js" crossorigin="anonymous"></script>
+    <!-- Font awesome end-->
+
+
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- Bootstrap script end -->
+
+    <!-- JQuery -->
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- JQuery end -->
+
+
+    <!-- Javascript -->
+    <script src="./assets/js/script.js"></script>
+    <!-- Javascript  end-->
+
+</body>
+</html>

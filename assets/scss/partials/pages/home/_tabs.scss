@@ -11,7 +11,7 @@
     }
 
     a.active{
-        background: $primary-color;
+        background: $fifth-color;
         color: #fff;
         
     }
@@ -27,14 +27,23 @@
     }
 }
 
+.tab_display{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .filter_block{
+        display: none;
+    }
+}
 
 
-.today_list{
+
     
     .filter_blocks{
         margin-bottom: $base-size*10;
         padding: 20px 0;
-        background: $primary-color;
+        background: $fifth-color;
         display: flex;
         justify-content: center;
         text-align: center;
@@ -44,20 +53,19 @@
             margin-right: $base-size*10;
 
             .selected{
-                background: #fff url("https://cinemaplus.az/site/templates/images/select_icon.svg") no-repeat 100% 50%;
-                appearance: none;
+                
                 font-size: $font-size -4;
                 font-weight: 500;
                 line-height: $font-size -1;
                 padding: 0 15px 0 20px;
                 
                 margin-right: 1px;
-                border-radius: 20px;
+                border-radius: 8px;
                 height: $base-size*10;
             }
         }
     }
-}
+
 
 .movie-items{
     .movie-name{
@@ -90,7 +98,6 @@
 }
 
 .movie-items:hover{
-
     .movie-name{
         background-color: $primary-color;
         
@@ -152,3 +159,100 @@
 
     }
 }
+
+
+.movie-card{
+    perspective: 150rem;
+    position: relative;
+    width: 100%;
+    box-shadow: none;
+    background:none;
+
+    .card-side{
+        border-radius: 15px;
+        transition: all 0.8s ease;
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        padding: 2rem;
+        color: #fff;
+
+    }
+
+    .card-side.back{
+        transform: rotateY(-180deg);
+        background-color: $primary-color;
+        background-image: linear-gradient(
+            43deg,
+            #4158D0 0%,
+            #C850C0 46%,
+            #FFCC70 100%
+        );
+    }
+
+    .card-side.front{
+        background-color: #0093E9;
+        background-image: linear-gradient(
+            43deg,
+            #0093E9 0%,
+            #C850C0 46%,
+            #FFCC70 100%
+        );
+    }
+
+    
+}
+
+.movie-card:hover .card-side.front{
+    transform: rotateY(180deg);
+}
+
+.movie-card:hover .card-side.back{
+    transform: rotateY(0deg);
+}
+
+
+.scene {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    perspective: 800px;
+  
+    .card {
+      position: relative;
+      width: 240px;
+      height: 300px;
+      color: white;
+      cursor: pointer;
+      transition: 1s ease-in-out;
+      transform-style: preserve-3d;
+  
+      &:hover {
+        transform: rotateY(0.5turn);
+      }
+  
+      .card__face {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transition: 1s ease-in-out;
+        -webkit-box-reflect: below 0
+          linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
+  
+        img {
+          width: 240px;
+          height: 300px;
+          object-fit: cover;
+        }
+  
+        &--back {
+          transform: rotateY(0.5turn);
+        }
+      }
+    }
+  }

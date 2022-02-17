@@ -1,0 +1,82 @@
+
+#parallax{
+    padding: $base-size*20 0;
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Satisfy&family=Shizuru&display=swap');
+
+
+.parallax_image{
+
+    background-image: url(../../../../../assets/image/The-Best-Movies-Trilogies-Of-All-Time.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    // img{
+    //     width: 100%;
+    //     height: auto;
+    // }
+}
+
+.parallax_image::before{
+    
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: black;
+    opacity: 0.5;
+}
+
+.parallax_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    color: #fff;
+
+    h2{
+        font-size: $font-size*3 !important;
+        font-weight: $font-weight+100;
+        font-family: 'Fredericka the Great', cursive;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: $font-size+10;
+        font-weight: $font-weight;
+        font-family: 'Fredericka the Great', cursive;
+        text-transform: uppercase;
+    }
+
+    
+   
+}
+
+@media screen and (max-width: $medium){
+        .parallax_content{
+            h2{
+                font-size: $font-size*2 !important;
+                
+            }
+            p{
+                font-size: $font-size;
+            }
+        }
+}
