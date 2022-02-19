@@ -1,5 +1,15 @@
 #tabs{
-    padding: $base-size*20 0;
+     padding: $base-size*20 0;
+     background-color: #131720;
+
+    background-image: url(../../../../../assets/image/home-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 .tab_header{
@@ -23,7 +33,7 @@
         padding: $base-size*5 ;
         line-height: $base-size;
         display: inline-block;
-        color: black;
+        color: #fff;
     }
 }
 
@@ -74,7 +84,7 @@
             margin-bottom: 0 !important;
             a{
                 font-size: $font-size;
-                color: #000000;
+                color: #fff;
                 padding: $base-size*5 0;
                 display: block;
                 text-align: center;
@@ -105,7 +115,7 @@
     }
     h2{
         a{
-            color: #fff;
+            color: black;
         }
     }
 }
@@ -255,4 +265,20 @@
         }
       }
     }
+  }
+
+
+  .table-dark{
+
+        tbody{
+            td{
+                .table_link{
+                    color: #fff;
+                }
+
+                .table_link:hover{
+                    text-decoration: none;
+                }
+            }
+        }
   }

@@ -1,0 +1,22 @@
+
+.contact-items{
+    .contact-item{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        border-bottom: 1px solid #fff;
+
+        h5{
+            color: #fff !important;
+        }
+
+        p{
+            color: #fff !important;
+            font-size: 16px;
+        }
+    }
+}
+

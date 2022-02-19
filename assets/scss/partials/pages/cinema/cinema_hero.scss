@@ -1,0 +1,31 @@
+.hero-image{
+    position: relative;
+}
+
+.cinema_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    h2{
+        font-size: 50px !important;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    p{
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #fff;
+
+    }
+}

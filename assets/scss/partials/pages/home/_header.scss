@@ -3,19 +3,39 @@
     background:transparent;
     position: fixed;
     z-index: 99; 
+    background-color: black;
+    opacity: 0.8;
 }
+#header::after{
+    content: '';
+    width: 97%;
+    background: white;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
 
 .navbar-brand{
     color: #fff !important;
     font-size: $font-size+10 !important;
     font-weight: $font-weight+100 !important;
+    
+    img{
+        width: 150px;
+        height: 60px;
+    }
 }
 
 .nav-link{
     margin-right: $base-size*3;
     color: #fff !important;
-    font-size: $font-size -4;
-    font-weight: $font-weight;
+    font-size: $font-size;
+    font-weight: $font-weight+100;
+    
 }
 
 @media screen and (max-width: $medium) {

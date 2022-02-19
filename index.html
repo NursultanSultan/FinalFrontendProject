@@ -15,13 +15,17 @@
 
     <title>Document</title>
 </head>
-<body>
+<body >
+
+    
     
     <!-- Header start -->
     <header id="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">Cinema</a>
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/image/pixoo-logo2.png" alt="">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -60,7 +64,7 @@
 
     <!-- Slider start -->
 
-    <section id="slider">
+    <!-- <section id="slider">
         
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -92,6 +96,13 @@
             
         </div>
         
+    </section> -->
+
+
+    <section id="hero">
+        <div class="hero-image">
+            <img style="width: 100%;" src="./assets/image/1_5lyavS59mazOFnb55Z6znQ.png" alt="">
+        </div>
     </section>
 
     <!-- slider end -->
@@ -99,6 +110,7 @@
     <!-- Tabs start -->
 
     <section id="tabs">
+
         <div class="tab_header">
             <a href="#today_list" class="active btn" id="today_list" rel="today">BU GÜN</a>
             <a href="#schedule_list" class="btn" id="schedule_list" rel="schedule">CƏDVƏL</a>
@@ -108,29 +120,29 @@
             <div class="today_list tab_list">
                 <div class="filter_blocks mobile_hide">
                     <div class="filter_block">
-                        <select class="selected" name="home_cinema_sorter" id="home_cinema_sorter">
-                            <option value="0">Kinoteatrlar</option>
-	                        <option value="0">Kinoteatrlar</option>
-						    <option value="1029">28 Mall</option>
-                            <option value="1079">Ganjlik Mall</option>
-                            <option value="1768695">Deniz Mall</option>
-                            <option value="1083">Azerbaijan Cinema</option>
-                            <option value="1087">Amburan Mall</option>
-                            <option value="1640449">Sumqayıt</option>
-                            <option value="1095">Khamsa Park (Ganja)</option>
-                            <option value="629922">Ganja Mall (Ganja)</option>
-                            <option value="1768759">Şamaxı</option>
+                        <select class="form-control selected" id="exampleFormControlSelect1">
+                            <option >Kinoteatrlar</option>
+	                        <option >Kinoteatrlar</option>
+						    <option >28 Mall</option>
+                            <option>Ganjlik Mall</option>
+                            <option>Deniz Mall</option>
+                            <option>Azerbaijan Cinema</option>
+                            <option>Amburan Mall</option>
+                            <option >Sumqayıt</option>
+                            <option>Khamsa Park (Ganja)</option>
+                            <option >Ganja Mall (Ganja)</option>
+                            <option>Şamaxı</option>
                         </select>
                     </div>
                    
                     <div class="filter_block">
-                        <select class="selected" name="home_lang_sorter" id="home_lang_sorter">
-                            <option value="0">Filmin dili</option>
-                            <option value="0">Bütün dillərdə</option>
-                            <option value="1800">Azərbaycanca</option>
-                            <option value="1798">Ha pyccкoм</option>
-                            <option value="1797">In English</option>
-                            <option value="1799">Türkçe</option>			                        
+                        <select class="form-control selected" id="exampleFormControlSelect1">
+                            <option >Filmin dili</option>
+                            <option>Bütün dillərdə</option>
+                            <option >Azərbaycanca</option>
+                            <option >Ha pyccкoм</option>
+                            <option>In English</option>
+                            <option>Türkçe</option>			                        
                         </select>
                     </div>
                 </div>
@@ -160,7 +172,7 @@
                                 </div>
 
                                 <div class="go-sessio">
-                                    <a href="#"> SEANSLAR</a>
+                                    <a href="./movie.html"> SEANSLAR</a>
                                     <span class="age-limit">
                                         16+
                                     </span>
@@ -168,30 +180,6 @@
                                 
                             </div>
                         </div>
-
-                        <!-- <div class="col-lg-3 col-md-6 col-sm-12">
-                            <div class="movie-card">
-                                <div class="card-side front">
-                                    <img style="width: 100%;" src="./assets/image/16837.350x0.jpg" alt="">
-                                </div>
-                                <div class="card-side back">
-
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- <div class="col-lg-3">
-                            <div class="scene">
-                                <div class="card">
-                                  <div class="card__face card__face--front">
-                                    <img style="width: 100%;" src="https://i.loli.net/2019/11/23/cnKl1Ykd5rZCVwm.jpg" />
-                                  </div>
-                                  <div class="card__face card__face--back">
-                                    <img style="width: 100%;" src="https://i.loli.net/2019/11/16/cqyJiYlRwnTeHmj.jpg" />
-                                  </div>
-                                 </div>
-                            </div>
-                        </div> -->
 
                         <div class="col-lg-3 col-md-6 col-sm-12">
                             <div class="movie-items">
@@ -217,7 +205,7 @@
                                 </div>
 
                                 <div class="go-sessio">
-                                    <a href="#"> SEANSLAR</a>
+                                    <a href="./movie.html"> SEANSLAR</a>
                                     <span class="age-limit">
                                         16+
                                     </span>
@@ -249,7 +237,7 @@
                                 </div>
 
                                 <div class="go-sessio">
-                                    <a href="#"> SEANSLAR</a>
+                                    <a href="./movie.html"> SEANSLAR</a>
                                     <span class="age-limit">
                                         16+
                                     </span>
@@ -257,8 +245,7 @@
                                 
                             </div>
                         </div>
-
-                        
+                       
 
                     </div>
                 </div>
@@ -327,7 +314,9 @@
                                   <tr>
                                     <th>SpiderMan</th>
                                     <td>17 : 00</td>
-                                    <td>Ganjlik Mall</td>
+                                    <td>
+                                        <a class="table_link" href="./cinema.html">Ganjlik Mall</a>
+                                    </td>
                                     <td>Zal1</td>
                                     <td>
                                         <img style="width:55px;height: 50px;" src="./assets/image/ni_tur.png" alt="">
@@ -345,6 +334,67 @@
                                     <td>@mdo</td>
                                     <td>@mdo</td>
                                     <td>@mdo</td>
+                                  </tr>
+                                  <tr>
+                                    <th>SpiderMan</th>
+                                    <td>17 : 00</td>
+                                    <td>
+                                        <a class="table_link" href="./cinema.html">Ganjlik Mall</a>
+                                    </td>
+                                    <td>Zal1</td>
+                                    <td>
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_tur.png" alt="">
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_twod.png" alt="">
+                                    </td>
+                                    <td>8.00 AZN</td>
+                                    <td>@mdo</td>
+
+                                  </tr>
+                                  <tr>
+                                    <th>SpiderMan</th>
+                                    <td>17 : 00</td>
+                                    <td>
+                                        <a class="table_link" href="./cinema.html">Ganjlik Mall</a>
+                                    </td>
+                                    <td>Zal1</td>
+                                    <td>
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_tur.png" alt="">
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_twod.png" alt="">
+                                    </td>
+                                    <td>8.00 AZN</td>
+                                    <td>@mdo</td>
+
+                                  </tr>
+                                  <tr>
+                                    <th>SpiderMan</th>
+                                    <td>17 : 00</td>
+                                    <td>
+                                        <a class="table_link" href="./cinema.html">Ganjlik Mall</a>
+                                    </td>
+                                    <td>Zal1</td>
+                                    <td>
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_tur.png" alt="">
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_twod.png" alt="">
+                                    </td>
+                                    <td>8.00 AZN</td>
+                                    <td>@mdo</td>
+
+                                  </tr>
+
+                                  <tr>
+                                    <th>SpiderMan</th>
+                                    <td>17 : 00</td>
+                                    <td>
+                                        <a class="table_link" href="./cinema.html">Ganjlik Mall</a>
+                                    </td>
+                                    <td>Zal1</td>
+                                    <td>
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_tur.png" alt="">
+                                        <img style="width:55px;height: 50px;" src="./assets/image/ni_twod.png" alt="">
+                                    </td>
+                                    <td>8.00 AZN</td>
+                                    <td>@mdo</td>
+
                                   </tr>
                                   
                                 </tbody>
@@ -381,6 +431,7 @@
     <!-- Parallax end -->
 
     
+    <div style="height: 1000px;"></div>
 
     <!-- Main end -->
 
