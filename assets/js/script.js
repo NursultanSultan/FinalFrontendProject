@@ -2,8 +2,8 @@ var navItem = document.getElementsByClassName("nav-link");
 window.addEventListener("scroll", () => {
     if(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         
-        header.style.backgroundColor="#222222";
-        header.style.opacity="1";
+        // header.style.backgroundColor="#222222";
+        header.style.opacity="0.9";
         
         // headerLogo.style.width="140px";
     }else {

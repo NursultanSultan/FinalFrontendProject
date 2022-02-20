@@ -1,0 +1,71 @@
+
+#movie_about{
+    padding: 80px 0;
+
+    .tab_header{
+        margin-bottom: 30px;
+
+        border-bottom:5px solid $primary-color;
+    }
+}
+
+
+.movie_hero_content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: center;
+
+    
+    
+    h3{
+        font-family: 'Rubik', sans-serif;
+        font-weight: $base-size*100;
+        color: #fff !important;
+        margin-bottom: 20px;
+        line-height: 140%;
+    }
+    
+    .list{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-right: 0;
+
+        list-style: none;
+
+        li{
+            margin-right: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 400;
+            color: #e0e0e0;
+
+            svg{
+                width: 18px;
+                height: auto;
+                fill: #2f80ed;
+                transition: fill 0.5s;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    p{
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        color: #e0e0e0;
+        text-align: start;
+    }
+}

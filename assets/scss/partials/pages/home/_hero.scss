@@ -1,0 +1,18 @@
+
+#hero{
+    position: relative;
+}
+#hero::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: $primary-color;
+    opacity: 0.4;
+    z-index: 2;
+}

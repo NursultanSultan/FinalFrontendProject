@@ -15,13 +15,13 @@
 
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #131720;">
     
     <!-- Header start -->
     <header id="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                     <img src="./assets/image/pixoo-logo2.png" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,8 +60,61 @@
 
     <main>  
 
+      <section id="movie_hero">
+        <div class="movie_hero_image">
+          <img src="./assets/image/baydirmanbackground.jpg" alt="">
+        </div>
+
+        
+      </section>
+
+      <section id="movie_about">
+
+        <div class="tab_header">
+          <a href="#about" class="active btn" id="about" rel="schedule">About</a>
+          
+        </div>
+
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="trailer_player">
+                <iframe width="100%" height="400" src="https://www.youtube.com/embed/OWNzUd2urJo"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              
+              <div class="movie_hero_content">
+                <h3> Baydirman </h3>
+                
+                <ul class="list">
+                  <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22,9.67A1,1,0,0,0,21.14,9l-5.69-.83L12.9,3a1,1,0,0,0-1.8,0L8.55,8.16,2.86,9a1,1,0,0,0-.81.68,1,1,0,0,0,.25,1l4.13,4-1,5.68A1,1,0,0,0,6.9,21.44L12,18.77l5.1,2.67a.93.93,0,0,0,.46.12,1,1,0,0,0,.59-.19,1,1,0,0,0,.4-1l-1-5.68,4.13-4A1,1,0,0,0,22,9.67Zm-6.15,4a1,1,0,0,0-.29.88l.72,4.2-3.76-2a1.06,1.06,0,0,0-.94,0l-3.76,2,.72-4.2a1,1,0,0,0-.29-.88l-3-3,4.21-.61a1,1,0,0,0,.76-.55L12,5.7l1.88,3.82a1,1,0,0,0,.76.55l4.21.61Z"></path></svg> 9.7</li>
+                  <li>Action</li>
+                  <li>2021</li>
+                  <li>1 h 42 min</li>
+                  <li>16+</li>
+                </ul>
+      
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Esse incidunt harum odio minus id aliquid veritatis accusamus a quis aut!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Esse incidunt harum odio minus id aliquid veritatis accusamus a quis aut!
+                </p>
+      
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
         <!-- trailer start -->
-        <section id="trailer" >
+        <!-- <section id="trailer" >
             <div class="row">
               <div class="col-lg-12">
                 <div class="trailer_player">
@@ -72,7 +125,7 @@
                 </div>
               </div>
             </div>
-        </section>
+        </section> -->
         <!-- trailer end -->
 
         <!-- tab start -->
@@ -85,7 +138,10 @@
             <div class="tab_body">
                 
                 <div class="session_list tab_list">
-                    <div class="filter_blocks">
+                    
+                    <div class="container">
+
+                      <div class="filter_blocks">
     
                         
                         <div class="filter_block">
@@ -127,7 +183,6 @@
                             </select>
                         </div>
                     </div>
-                    <div class="container">
                         
                       <div class="table-responsive">
                           <table class="table table-hover table-dark">
