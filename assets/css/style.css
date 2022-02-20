@@ -6,6 +6,28 @@
           box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 172, 236, 0.8);
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #151f30;
+}
+
 #header {
   width: 100%;
   background: transparent;
@@ -186,47 +208,9 @@
   height: 50px;
 }
 
-.go-sessio {
-  background-color: #F3F3F3;
-  padding: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.go-sessio a {
-  background-color: #151f30;
-  font-family: 'Gotham-Medium';
-  font-size: 16px;
-  color: #FFFFFF;
-  line-height: 19px;
-  background-color: #151f30;
-  padding: 10px 16px;
-  border-radius: 50px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  text-transform: uppercase;
-  margin-right: 4px;
-}
-
-.go-sessio a:hover {
-  text-decoration: none;
-  color: #FFFFFF;
-  background-color: rgba(0, 172, 236, 0.8);
-}
-
-.go-sessio .age-limit {
-  border-radius: 50%;
-  background-color: #D0021B;
-  padding: 8px;
-  color: #fff;
-}
-
 .table-dark tbody td .table_link {
   color: #fff;
+  text-decoration: none;
 }
 
 .table-dark tbody td .table_link:hover {
@@ -784,6 +768,74 @@
     width: calc(100% - 190px);
     padding: 0 20px 20px;
   }
+}
+
+#footer {
+  padding: 80px 0;
+  background-color: #151f30;
+}
+
+#footer {
+  /* border-bottom: 2px solid black; */
+}
+
+#footer .links h4 {
+  font-size: 24px;
+  position: relative;
+  padding: 10px 0;
+  color: #fff;
+}
+
+#footer .links h4::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  width: 90%;
+  height: 2px;
+}
+
+#footer .links .list {
+  padding: 0;
+  list-style: none;
+}
+
+#footer .links .list li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#footer .social_link ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#footer .social_link ul li {
+  padding: 0 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+#footer .info h3 {
+  color: #fff;
+}
+
+#footer .info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  color: #fff;
 }
 
 #movie_hero {
