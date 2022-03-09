@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Css end  -->
 
+    <!-- owl carousel -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <!-- owl carousel end -->
     
 
     <!-- Bootstrap link -->
@@ -24,7 +30,7 @@
     
     
     <!-- Header start -->
-    <header id="header">
+    <!-- <header id="header">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">
@@ -35,8 +41,8 @@
                       <img src="./assets/image/532-5328945_menu-bar-icon-white-clipart-png-download-menu.png" alt="">
                   </span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                  <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                       <a class="nav-link" href="#">Bas Sehife</a>
                     </li>
@@ -52,6 +58,10 @@
                     <li class="nav-item">
                       <a class="nav-link " href="#">Haqqimizda</a>
                     </li>
+
+                    <li class="nav-item login-item">
+                        <a class="nav-link login-link" href="#">Login</a>
+                      </li>
                   </ul>
                   
                     
@@ -61,12 +71,80 @@
                 
               </nav>
         </div>
-    </header>
+    </header> -->
+    
+    <header class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="header__content">
+						<!-- header logo -->
+						<a href="index.html" class="header__logo">
+							<img src="img/logo.svg" alt="">
+                            My<span>Flix</span>   
+						</a>
+						<!-- end header logo -->
+
+						<!-- header nav -->
+						<ul class="header__nav">
+							<!-- dropdown -->
+							<li class="header__nav-item">
+								<a href="pricing.html" class="header__nav-link">Home</a>
+
+								
+							</li>
+							<!-- end dropdown -->
+
+							<!-- dropdown -->
+							<li class="header__nav-item">
+								<a class="dropdown-toggle header__nav-link" href="#" role="button" id="dropdownMenuCatalog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog <i class="icon ion-ios-arrow-down"></i></a>
+
+								<ul class="dropdown-menu header__dropdown-menu" aria-labelledby="dropdownMenuCatalog">
+									<li><a href="catalog.html">Catalog style 1</a></li>
+									<li><a href="catalog2.html">Catalog style 2</a></li>
+									<li><a href="details.html">Details style 1</a></li>
+									<li><a href="details2.html">Details style 2</a></li>
+								</ul>
+							</li>
+							<!-- end dropdown -->
+
+							<li class="header__nav-item">
+								<a href="pricing.html" class="header__nav-link">Pricing plan</a>
+							</li>
+
+							
+						</ul>
+						<!-- end header nav -->
+
+						<!-- header auth -->
+						<div class="header__auth">
+							
+							<a href="signin.html" class="header__sign-in">
+								<i class="icon ion-ios-log-in"></i>
+								<span>sign in</span>
+							</a>
+						</div>
+						<!-- end header auth -->
+
+						<!-- header menu btn -->
+						<button class="header__btn" type="button">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+						<!-- end header menu btn -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
     <!-- Header end -->
 
 
     <!-- Main start -->
 
+    <main>
 
     <!-- Slider start -->
 
@@ -127,7 +205,9 @@
                 <div class="container">
                     <div class="filter_blocks mobile_hide">
                         <div class="filter_block">
+                            
                             <select class="form-control selected" id="exampleFormControlSelect1">
+                                
                                 <option >Kinoteatrlar</option>
                                 <option >Kinoteatrlar</option>
                                 <option >28 Mall</option>
@@ -828,8 +908,76 @@
     </section>
     <!-- Parallax end -->
 
+    <!-- Testimonial start -->
+
+    <section id="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                </p>
+                            </div>
+                            <h3 class="title">John</h3>
+                            <span class="post">Web Developer</span>
+                        </div>
     
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                </p>
+                            </div>
+                            <h3 class="title">Kelle</h3>
+                            <span class="post">Web Designer</span>
+                        </div>
     
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                </p>
+                            </div>
+                            <h3 class="title">Steven</h3>
+                            <span class="post">Web Developer</span>
+                        </div>
+    
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left"></i>
+                                </div>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+                                </p>
+                            </div>
+                            <h3 class="title">Peter</h3>
+                            <span class="post">Web Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Testimonial end -->
+
+
+
+    </main>
 
     <!-- Main end -->
 
@@ -943,6 +1091,10 @@
    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <!-- JQuery end -->
 
+    <!-- owl carousel -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <!-- owl carousel end -->
 
     <!-- Javascript -->
     <script src="./assets/js/script.js"></script>

@@ -1,18 +1,43 @@
-var navItem = document.getElementsByClassName("nav-link");
-window.addEventListener("scroll", () => {
-    if(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+// var navItem = document.getElementsByClassName("nav-link");
+// window.addEventListener("scroll", () => {
+//     if(document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
         
-        // header.style.backgroundColor="#222222";
-        header.style.opacity="0.9";
+//         // header.style.backgroundColor="#222222";
+//         header.style.opacity="0.9";
         
-        // headerLogo.style.width="140px";
-    }else {
+//         // headerLogo.style.width="140px";
+//     }else {
         
-        header.style.backgroundColor="black";
-        header.style.opacity="0.8";
-        // headerLogo.style.width="200px";
-    }
-})
+//         header.style.backgroundColor="black";
+//         header.style.opacity="0.7";
+//         // headerLogo.style.width="200px";
+//     }
+// })
+
+$('.header__btn').on('click', function() {
+  $(this).toggleClass('header__btn--active');
+  $('.header__nav').toggleClass('header__nav--active');
+  $('.body').toggleClass('body--active');
+});
+
+$('.header__search-btn, .header__search-close').on('click', function() {
+  $('.header__search').toggleClass('header__search--active');
+});
+
+
+$(document).ready(function(){
+  $("#testimonial-slider").owlCarousel({
+      items:3,
+      itemsDesktop:[1000,3],
+      itemsDesktopSmall:[980,2],
+      itemsTablet:[768,2],
+      itemsMobile:[650,1],
+      pagination:true,
+      navigation:false,
+      slideSpeed:1000,
+      autoPlay:true
+  });
+});
 
 // var btns = document.querySelectorAll(".btn");
 //    Array.from(btns).forEach(item => {
@@ -55,3 +80,5 @@ for (let i = 0; i < tab_header.length; i++) {
     });
   }
 
+
+  
