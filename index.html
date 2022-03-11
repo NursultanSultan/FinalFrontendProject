@@ -10,13 +10,22 @@
     <!-- Css end  -->
 
     <!-- owl carousel -->
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css"> -->
     <!-- owl carousel end -->
     
-
+    <!-- bootstrap icon links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!-- icon link end -->
     <!-- Bootstrap link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     
@@ -146,50 +155,111 @@
 
     <main>
 
-    <!-- Slider start -->
+    
+    <!-- hero start -->
 
-    <!-- <section id="slider">
-        
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
+    <section id="hero" class="hero mt-5" style="background: url('./assets/image/herobackgroundimg.jpg') center/cover no-repeat fixed;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
 
-            
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="./assets/image/cover-batman.png" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="./assets/image/cover-1.png" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="./assets/image/uncharted-cover.png" alt="Third slide">
+                    <div class="hero_title">
+                        New movies in cinema
+                    </div>
+
+                    <div id="hero_owl" class="owl-carousel owl-theme">
+                        
+                        <div class="item">
+                            <div class="item-raiting">3.1</div>
+                            <div class="item-img">
+                                <img src="./assets/image/baydirman.jpg" alt="">
+                                <a href="#" class="item-play">
+                                    <i class="bi bi-play-fill"></i>
+                                </a>
+                            </div>
+
+                            <div class="item-content">
+                                <a href="#" class="item-name">Benched</a>
+                                <a href="#" class="item-genre">Comedy</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-raiting">3.1</div>
+                            <div class="item-img">
+                                <img src="./assets/image/Dayi.jpg" alt="">
+                                <a href="#" class="item-play">
+                                    <i class="bi bi-play-fill"></i>
+                                </a>
+                            </div>
+
+                            <div class="item-content">
+                                <a href="#" class="item-name">Benched</a>
+                                <a href="#" class="item-genre">Comedy</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-raiting">3.1</div>
+                            <div class="item-img">
+                                <img src="./assets/image/krik.jpg" alt="">
+                                <a href="#" class="item-play">
+                                    <i class="bi bi-play-fill"></i>
+                                </a>
+                            </div>
+
+                            <div class="item-content">
+                                <a href="#" class="item-name">Benched</a>
+                                <a href="#" class="item-genre">Comedy</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-raiting">3.1</div>
+                            <div class="item-img">
+                                <img src="./assets/image/terrakota.jpg" alt="">
+                                <a href="#" class="item-play">
+                                    <i class="bi bi-play-fill"></i>
+                                </a>
+                            </div>
+
+                            <div class="item-content">
+                                <a href="#" class="item-name">Benched</a>
+                                <a href="#" class="item-genre">Comedy</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-raiting">3.1</div>
+                            <div class="item-img">
+                                <img src="./assets/image/ancharted.350x0.jpg" alt="">
+                                <a href="#" class="item-play">
+                                    <i class="bi bi-play-fill"></i>
+                                </a>
+                            </div>
+
+                            <div class="item-content">
+                                <a href="#" class="item-name">Benched</a>
+                                <a href="#" class="item-genre">Comedy</a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-raiting">3.1</div>
+                            <div class="item-img">
+                                <img src="./assets/image/alovluurek.png" alt="">
+                                <a href="#" class="item-play">
+                                    <i class="bi bi-play-fill"></i>
+                                </a>
+                            </div>
+
+                            <div class="item-content">
+                                <a href="#" class="item-name">Benched</a>
+                                <a href="#" class="item-genre">Comedy</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            
         </div>
-        
-    </section> -->
-
-
-    <section id="hero">
-        <div class="hero-image">
-            <img style="width: 100%;" src="./assets/image/1_5lyavS59mazOFnb55Z6znQ.png" alt="">
-        </div> 
     </section>
 
-    <!-- slider end -->
+    <!-- hero end -->
 
     <!-- Tabs start -->
 
@@ -1092,8 +1162,11 @@
     <!-- JQuery end -->
 
     <!-- owl carousel -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script> -->
     <!-- owl carousel end -->
 
     <!-- Javascript -->

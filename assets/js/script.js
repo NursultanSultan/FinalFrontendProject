@@ -39,6 +39,28 @@ $(document).ready(function(){
   });
 });
 
+$('#hero_owl').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:false,
+  smartSpeed:500,
+  autoplay:true,
+  autoplayTimeout:3000,
+  responsive:{
+      0:{
+          items:1
+      },
+      400: {
+          items: 2
+      },
+      600:{
+          items:3
+      },
+      1000:{
+          items:5
+      }
+  }
+})
 // var btns = document.querySelectorAll(".btn");
 //    Array.from(btns).forEach(item => {
 //       item.addEventListener("click", () => {
